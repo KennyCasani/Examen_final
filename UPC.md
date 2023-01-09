@@ -146,3 +146,19 @@ t1resumen=data.find_all(class_="word-break")[7].text
 
 t1fecha_emitida=data.find_all(class_="word-break")[5].text
 
+#########################
+
+
+url=lista[1]
+
+html=requests.get(url)
+
+content=html.content
+
+soup=b(content,"lxml")
+
+data=soup.find("div",class_="simple-item-view-show-full item-page-field-wrapper table")
+
+link=data.find("a")
+
+link2="https://repositorioacademico.upc.edu.pe"+ link["href"]
