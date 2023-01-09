@@ -257,3 +257,9 @@ df['Tercera tesis']=[t3universidad,t3titulo,t3nombre_tesista1,t3nombre_tesista2,
 df
 
 
+
+#Para descargar en csv
+
+#Adjuntamos los datos del data frame y lo almacenamos y se descarga en csv
+
+tesis_x = df.to_csv('Tesis_upc.csv', encoding = 'ANSI',index = False)
