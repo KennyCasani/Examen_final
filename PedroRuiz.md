@@ -31,6 +31,16 @@ content=html.content                                # extraemos el contenido de 
 
 soup=b(content,"lxml")                              # extraemos de una manera más visible el contenido 
 
+link = soup.find_all('a', text="Tesis: título profesional")  
+
+
+# 3er paso 
+
+url=enlace1                                         # guardamos en enlace donde se encuentran las titulos prifesioanles en url 
+
+
+
+
 
 
 
