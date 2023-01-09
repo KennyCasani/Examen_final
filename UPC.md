@@ -59,3 +59,10 @@ for linea in data:
     link=linea.find("a") 
     links="https://repositorioacademico.upc.edu.pe:"+link.get("href") 
     lista.append(links) 
+
+
+############################## 
+    
+url=lista[0] 
+html=requests.get(url) 
+content=html.content 
