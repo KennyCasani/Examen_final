@@ -33,11 +33,13 @@ soup=b(content,"lxml")                              # extraemos de una manera m√
 
 link = soup.find_all('a', text="Tesis: t√≠tulo profesional")  
 
-link = link[0]
 
-href = link['href']
+# 3er paso 
 
-enlace1="https://repositorio.unprg.edu.pe"+href           # obtrenemos el enlace del link 
+url=enlace1                                         # guardamos en enlace donde se encuentran las titulos prifesioanles en url 
+
+
+
 
 
 
