@@ -232,4 +232,28 @@ t3resumen=data.find_all(class_="word-break")[7].text
 
 t3fecha_emitida=data.find_all(class_="word-break")[5].text
 
+#creamos un dataframe 
+
+df=pd.DataFrame()
+
+#insertamos:
+
+#insertamos estructura del informe
+
+df['Estructura']= ["Universidad","Título","Nombre del tesista 1","Nombre del tesista 2","Grado","Asesor","Resumen","Fecha emitida"]
+
+#insertamos los datos extraidos de la tesis 1
+
+df['Primera tesis']=[t1universidad,t1titulo,t1nombre_tesista1,t1nombre_tesista2,t1grado,t1asesor,t1resumen,t1fecha_emitida]
+
+#insertamos los datos extraidos de la tesis 2
+
+df['Segunda tesis']=[t2universidad,t2titulo,t2nombre_tesista1,t2nombre_tesista2,t2grado,t2asesor,t2resumen,t2fecha_emitida]
+
+#insertamos los datos extraidos de la tesis 3
+
+df['Tercera tesis']=[t3universidad,t3titulo,t3nombre_tesista1,t3nombre_tesista2,t3grado,t3asesor,t3resumen,t3fecha_emitida]
+
+df
+
 
