@@ -54,4 +54,8 @@ url="https://repositorioacademico.upc.edu.pe/handle/10757/622625"# guardo al dir
 html=requests.get(url)                              # pido acceso para poder leer el contenido de la página 
 content=html.content                                # accedo al contenido de la página 
 soup=b(content,"lxml")                      # con este comando puedo obtener una mejor visualizaciónn del contenido de la página                               
-
+data=soup.find_all(class_="row ds-artifact-item clamped-item-wrapper-list") 
+for linea in data: 
+    link=linea.find("a") 
+    links="https://repositorioacademico.upc.edu.pe:"+link.get("href") 
+    lista.append(links) 
