@@ -206,3 +206,30 @@ link=data.find("a")
 
 link3="https://repositorioacademico.upc.edu.pe"+ link["href"]
 
+url=link3
+
+html=requests.get(url)
+
+content=html.content
+
+soup=b(content,"lxml")
+
+data=soup.find(class_="ds-static-div primary")
+
+t3universidad=data.find_all(class_="word-break")[14].text
+
+t3titulo=data.find_all(class_="word-break")[30].text
+
+t3nombre_tesista1=data.find_all(class_="word-break")[1].text
+
+t3nombre_tesista2=data.find_all(class_="word-break")[2].text
+
+t3grado=data.find_all(class_="word-break")[35].text
+
+t3asesor=data.find_all(class_="word-break")[0].text
+
+t3resumen=data.find_all(class_="word-break")[7].text
+
+t3fecha_emitida=data.find_all(class_="word-break")[5].text
+
+
