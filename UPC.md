@@ -47,3 +47,11 @@ link = link[0]
 href = link['href'] 
 
 
+
+#5to paso
+lista=[]
+url="https://repositorioacademico.upc.edu.pe/handle/10757/622625"# guardo al dirección ulink rl en url 
+html=requests.get(url)                              # pido acceso para poder leer el contenido de la página 
+content=html.content                                # accedo al contenido de la página 
+soup=b(content,"lxml")                      # con este comando puedo obtener una mejor visualizaciónn del contenido de la página                               
+
