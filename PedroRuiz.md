@@ -31,6 +31,14 @@ content=html.content                                # extraemos el contenido de 
 
 soup=b(content,"lxml")                              # extraemos de una manera más visible el contenido 
 
+link = soup.find_all('a', text="Tesis: título profesional")  
+
+link = link[0]
+
+href = link['href']
+
+enlace1="https://repositorio.unprg.edu.pe"+href           # obtrenemos el enlace del link 
+
 
 
 
