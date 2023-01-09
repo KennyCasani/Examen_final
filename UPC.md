@@ -162,3 +162,104 @@ data=soup.find("div",class_="simple-item-view-show-full item-page-field-wrapper 
 link=data.find("a")
 
 link2="https://repositorioacademico.upc.edu.pe"+ link["href"]
+
+url=link2
+
+html=requests.get(url)
+
+content=html.content
+
+soup=b(content,"lxml")
+
+data=soup.find(class_="ds-static-div primary")
+
+t2universidad=data.find_all(class_="word-break")[14].text
+
+t2titulo=data.find_all(class_="word-break")[28].text
+
+t2nombre_tesista1=data.find_all(class_="word-break")[1].text
+
+t2nombre_tesista2=data.find_all(class_="word-break")[2].text
+
+t2grado=data.find_all(class_="word-break")[34].text
+
+t2asesor=data.find_all(class_="word-break")[0].text
+
+t2resumen=data.find_all(class_="word-break")[7].text
+
+t2fecha_emitida=data.find_all(class_="word-break")[5].text
+
+
+#########################
+
+url=lista[2]
+
+html=requests.get(url)
+
+content=html.content
+
+soup=b(content,"lxml")
+
+data=soup.find("div",class_="simple-item-view-show-full item-page-field-wrapper table")
+
+link=data.find("a")
+
+link3="https://repositorioacademico.upc.edu.pe"+ link["href"]
+
+url=link3
+
+html=requests.get(url)
+
+content=html.content
+
+soup=b(content,"lxml")
+
+data=soup.find(class_="ds-static-div primary")
+
+t3universidad=data.find_all(class_="word-break")[14].text
+
+t3titulo=data.find_all(class_="word-break")[30].text
+
+t3nombre_tesista1=data.find_all(class_="word-break")[1].text
+
+t3nombre_tesista2=data.find_all(class_="word-break")[2].text
+
+t3grado=data.find_all(class_="word-break")[35].text
+
+t3asesor=data.find_all(class_="word-break")[0].text
+
+t3resumen=data.find_all(class_="word-break")[7].text
+
+t3fecha_emitida=data.find_all(class_="word-break")[5].text
+
+#creamos un dataframe 
+
+df=pd.DataFrame()
+
+#insertamos:
+
+#insertamos estructura del informe
+
+df['Estructura']= ["Universidad","Título","Nombre del tesista 1","Nombre del tesista 2","Grado","Asesor","Resumen","Fecha emitida"]
+
+#insertamos los datos extraidos de la tesis 1
+
+df['Primera tesis']=[t1universidad,t1titulo,t1nombre_tesista1,t1nombre_tesista2,t1grado,t1asesor,t1resumen,t1fecha_emitida]
+
+#insertamos los datos extraidos de la tesis 2
+
+df['Segunda tesis']=[t2universidad,t2titulo,t2nombre_tesista1,t2nombre_tesista2,t2grado,t2asesor,t2resumen,t2fecha_emitida]
+
+#insertamos los datos extraidos de la tesis 3
+
+df['Tercera tesis']=[t3universidad,t3titulo,t3nombre_tesista1,t3nombre_tesista2,t3grado,t3asesor,t3resumen,t3fecha_emitida]
+
+df
+
+
+
+#Para descargar en csv
+
+#Adjuntamos los datos del data frame y lo almacenamos y se descarga en csv
+
+tesis_x = df.to_csv('Tesis_upc.csv', encoding = 'ANSI',index = False)
