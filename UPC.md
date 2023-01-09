@@ -138,3 +138,11 @@ t1nombre_tesista1=data.find_all(class_="word-break")[1].text
 
 t1nombre_tesista2=data.find_all(class_="word-break")[2].text
 
+t1grado=data.find_all(class_="word-break")[32].text
+
+t1asesor=data.find_all(class_="word-break")[0].text
+
+t1resumen=data.find_all(class_="word-break")[7].text
+
+t1fecha_emitida=data.find_all(class_="word-break")[5].text
+
