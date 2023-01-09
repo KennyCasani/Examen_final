@@ -33,6 +33,20 @@ soup=b(content,"lxml")                              # extraemos de una manera m�
 
 link = soup.find_all('a', text="Tesis: título profesional")  
 
+tml=requests.get(url)                              # pido acceso para poder leer el contenido de la página 
+
+content=html.content                               # exraemos de una manera más visible el contenido
+
+soup=b(content,"lxml")
+
+link = soup.find_all('a', text="Facultad de Ingeniería Civil, Sistemas y Arquitectura")       
+
+link = link[0]
+
+href = link['href']
+
+enlace2="https://repositorio.unprg.edu.pe"+href                      # gaurdamos el link donde se ubican los tttulos de la facultad de sistemas 
+
 
 # 3er paso 
 
