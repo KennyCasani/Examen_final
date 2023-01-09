@@ -25,3 +25,14 @@ link = link[0]
 href = link['href'] 
 
 
+
+#3er paso 
+url="https://repositorioacademico.upc.edu.pe/handle/10757/621410"   # guardo al dirección ulink rl en url   
+html=requests.get(url)                              # pido acceso para poder leer el contenido de la página  
+content=html.content 
+soup=b(content,"lxml")       
+link = soup.find_all('a', text='Facultad de Ingeniería') 
+link = link[0]  
+href = link['href'] 
+
+
