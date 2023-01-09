@@ -66,3 +66,7 @@ for linea in data:
 url=lista[0] 
 html=requests.get(url) 
 content=html.content 
+soup=b(content,"lxml") 
+data=soup.find("div",class_="simple-item-view-show-full item-page-field-wrapper table") 
+link=data.find("a") 
+link1="https://repositorioacademico.upc.edu.pe"+ link["href"] 
