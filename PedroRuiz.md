@@ -41,6 +41,25 @@ href = link['href']
 enlace1="https://repositorio.unprg.edu.pe"+href    
 
 
+# 3er paso 
+
+url=enlace1
+
+html=requests.get(url)                              # pido acceso para poder leer el contenido de la página 
+
+content=html.content
+
+soup=b(content,"lxml")
+
+link = soup.find_all('a', text="Facultad de Ingeniería Civil, Sistemas y Arquitectura")
+
+link = link[0]
+
+href = link['href']
+
+enlace2="https://repositorio.unprg.edu.pe"+href                       # guardamos el nuevo enlace en enlace 2 
+
+
 
 
 
