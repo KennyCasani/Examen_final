@@ -188,3 +188,21 @@ t2asesor=data.find_all(class_="word-break")[0].text
 t2resumen=data.find_all(class_="word-break")[7].text
 
 t2fecha_emitida=data.find_all(class_="word-break")[5].text
+
+
+#########################
+
+url=lista[2]
+
+html=requests.get(url)
+
+content=html.content
+
+soup=b(content,"lxml")
+
+data=soup.find("div",class_="simple-item-view-show-full item-page-field-wrapper table")
+
+link=data.find("a")
+
+link3="https://repositorioacademico.upc.edu.pe"+ link["href"]
+
