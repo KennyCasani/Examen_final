@@ -22,58 +22,101 @@ link = link[0]
 href = link['href'] 
 
 
+
 #2do paso 
+
 url="https://repositorioacademico.upc.edu.pe/handle/10757/621261"   # guardo al dirección ulink rl en url   
+
 html=requests.get(url)                              # pido acceso para poder leer el contenido de la página  
+
 content=html.content 
-soup=b(content,"lxml")       
+
+soup=b(content,"lxml") 
+
 link = soup.find_all('a', text='Pregrado') 
+
 link = link[0] 
+
 href = link['href'] 
+
 
 
 
 #3er paso 
+
 url="https://repositorioacademico.upc.edu.pe/handle/10757/621410"   # guardo al dirección ulink rl en url   
+
 html=requests.get(url)                              # pido acceso para poder leer el contenido de la página  
+
 content=html.content 
-soup=b(content,"lxml")       
+
+soup=b(content,"lxml") 
+
 link = soup.find_all('a', text='Facultad de Ingeniería') 
-link = link[0]  
+
+link = link[0] 
+
 href = link['href'] 
+
 
 
 
 #4to paso 
+
 url="https://repositorioacademico.upc.edu.pe/handle/10757/621585"   # guardo al dirección ulink rl en url  
+
 html=requests.get(url)                              # pido acceso para poder leer el contenido de la página  
+
 content=html.content 
-soup=b(content,"lxml")       
-link = soup.find_all('a', text='Ingeniería de Sistemas de Información') 
+
+soup=b(content,"lxml") 
+
+link = soup.find_all('a', text='Ingeniería de Sistemas de Información')
+
 link = link[0] 
+
 href = link['href'] 
 
 
 
+
 #5to paso
+
 lista=[]
+
 url="https://repositorioacademico.upc.edu.pe/handle/10757/622625"# guardo al dirección ulink rl en url 
-html=requests.get(url)                              # pido acceso para poder leer el contenido de la página 
+
+html=requests.get(url)                              # pido acceso para poder leer el contenido de la página
+
 content=html.content                                # accedo al contenido de la página 
-soup=b(content,"lxml")                      # con este comando puedo obtener una mejor visualizaciónn del contenido de la página                               
+
+soup=b(content,"lxml")                      # con este comando puedo obtener una mejor visualizaciónn del contenido de la página 
+
 data=soup.find_all(class_="row ds-artifact-item clamped-item-wrapper-list") 
+
 for linea in data: 
+
     link=linea.find("a") 
+    
     links="https://repositorioacademico.upc.edu.pe:"+link.get("href") 
+    
     lista.append(links) 
+    
 
 
 ############################## 
     
 url=lista[0] 
+
 html=requests.get(url) 
+
 content=html.content 
+
 soup=b(content,"lxml") 
-data=soup.find("div",class_="simple-item-view-show-full item-page-field-wrapper table") 
+
+data=soup.find("div",class_="simple-item-view-show-full item-page-field-wrapper table")
+
 link=data.find("a") 
+
 link1="https://repositorioacademico.upc.edu.pe"+ link["href"] 
+
