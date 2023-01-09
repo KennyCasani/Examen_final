@@ -21,36 +21,24 @@ for linea in data:
     
     enlace="https://repositorio.unprg.edu.pe"+link["href"]
     
+
 # 2dp paso
 
-url=enlace                     # guardamos el enlace extraido anteriormente en url   
- 
+url=enlace
+
 html=requests.get(url)                              # pido acceso para poder leer el contenido de la página 
 
-content=html.content                                # extraemos el contenido de la página 
-
-soup=b(content,"lxml")                              # extraemos de una manera más visible el contenido 
-
-link = soup.find_all('a', text="Tesis: título profesional")  
-
-tml=requests.get(url)                              # pido acceso para poder leer el contenido de la página 
-
-content=html.content                               # exraemos de una manera más visible el contenido
+content=html.content
 
 soup=b(content,"lxml")
 
-link = soup.find_all('a', text="Facultad de Ingeniería Civil, Sistemas y Arquitectura")       
+link = soup.find_all('a', text="Tesis: título profesional")
 
 link = link[0]
 
 href = link['href']
 
-enlace2="https://repositorio.unprg.edu.pe"+href                      # gaurdamos el link donde se ubican los tttulos de la facultad de sistemas 
-
-
-# 3er paso 
-
-url=enlace1                                         # guardamos en enlace donde se encuentran las titulos prifesioanles en url 
+enlace1="https://repositorio.unprg.edu.pe"+href    
 
 
 
