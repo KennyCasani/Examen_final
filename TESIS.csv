@@ -1,0 +1,108 @@
+Estructura,Primera tesis,Segunda tesis,Tercera tesis
+Universidad,Pontificia Universidad Católica del Perú,Pontificia Universidad Católica del Perú,Pontificia Universidad Católica del Perú
+Título,Implementación de un sistema de información para la gestión de unidades de manipulación en almacenes de grandes dimensiones,"Implementación de sistemas de gestión de seguridad de la información (SGSI), de servicios de TI (ITSM) y firma electrónica",Automatización del proceso de gestión de órdenes de compra con clientes B2B en una empresa de pinturas usando RPA
+Nombre del tesista,"Canasa Mayta, Paul Rodrigo","Cabello Roca, Percy Ernesto","Alpiste Sarmiento, Daniel Mijail"
+Grado,Ingeniero Informático,Ingeniero Informático,Ingeniero Informático
+profesion,Ingeniería Informática,Ingeniería Informática,Ingeniería Informática
+Asesor,"Tupia Anticona, Manuel Francisco","Flores García, Luis Alberto","Murillo Veliz, Braulio Oscar"
+Resumen,"Un almacén cuenta con tres funciones importantes. La primera está relacionada a la
+recepción, se debe realizar una verificación registrando la cantidad y las características
+de los productos recibidos para después ser almacenados. La segunda función abarca
+el control y gestión de los productos dentro de la infraestructura física. La tercera se
+refiere a la selección de productos a distribuir y el monitoreo de la entrega de estos al
+cliente.
+Una de las formas más comunes de administrar productos en un almacén de gran
+envergadura es mediante el uso de unidades de manipulación. Estas estructuras han
+sido utilizadas ampliamente como un importante equipo de logística unitaria, puesto que
+mejoran el proceso de carga y transporte de bienes. Además, su uso puede reducir la
+tasa de daños y errores, la necesidad de mano de obra y otros costos de manipulación.
+Existen varias consideraciones a tomar en cuenta al momento de recepcionar y
+despachar algún producto. Los almacenes pueden tener diferentes tipos de
+infraestructura y cada área dentro del almacén puede ser expuesta a distintos factores
+ambientales. Además, existen productos que deben estar distanciados de otros por su
+naturaleza, por ejemplo, no es posible mantener productos de consumo humano cerca
+de productos de limpieza. Otro punto a considerar son las políticas de rotación de
+productos, debido a que también influyen en la ubicación que deben tener en el almacén.
+Partiendo de esta problemática, el objetivo de este trabajo de fin de carrera es
+implementar un sistema de información para el soporte a la gestión de operaciones en
+la recepción y selección de productos para el despacho en almacenes de grandes
+dimensiones. Entre las funcionalidades más importantes se destacan la localización de
+los productos a despachar y las sugerencias por parte del sistema para que el usuario
+pueda almacenar los bienes recepcionados en el lugar más adecuado. Para lograr estas
+tareas se propone el uso de algoritmos metaheurísticos en la ubicación y salida de
+productos, así como se desarrollará un sistema web con el objetivo de monitorear las
+ubicaciones de los productos dentro del almacén y permitir al encargado realizar las
+funciones administrativas del mismo. Además, se implementará un aplicativo móvil con
+el fin de que el operario puede registrar los ingresos y salidas de bienes al almacén.","El presente informe describe la experiencia adquirida a través de la ejecución
+de tres proyectos de informática desarrollados por la Unidad de Tecnología de
+Información del Centro Internacional de la Papa, una organización dedicada al
+uso, mejoramiento y conservación de la papa, camote y otros tubérculos andinos
+para contribuir a los Objetivos de Desarrollo Sostenible (SDG) de las Naciones
+Unidas, específicamente: reducción de la pobreza rural, incremento de la
+seguridad alimentaria y mejoramiento de ecosistemas y recursos naturales.
+El primer proyecto, Implementación de un sistema de gestión de seguridad
+de la información (SGSI), resulta clave dados los procesos de transformación
+digital y fusión con otros 11 centros de investigación internacionales, que
+atraviesa el CIP. El poder contar con un marco para responder de manera
+sistemática a riesgos crecientes en ciberseguridad se agudizó ante el súbito
+cambio a un modelo de trabajo remoto a raíz de la pandemia del covid-19. La
+resolución de las recomendaciones de auditoría, a partir de la aprobación de la
+política de seguridad de la información, desarrollada en lineamientos por dominio
+y el establecimiento de una línea base de entendimiento de responsabilidades
+entre los empleados de CIP, clave para el éxito de esta iniciativa, son algunos
+de los resultados más relevantes.
+La Implementación de una solución de firma electrónica, segundo proyecto
+descrito, igualmente obedece a necesidades de optimizar los procesos de
+aprobación de la organización junto a la de contar con métodos no repudiables
+para estas. Estas necesidades y el valor de la solución fueron intensificados por
+la masificación de modalidades remotas de trabajo a raíz del covid-19. Los
+líderes de área se han apropiado de esta tecnología e identifican con mayor
+agilidad las transacciones donde la solución aporta más significativamente y
+continúa el despliegue global, dentro del marco de la política institucional
+establecida para su uso y limitaciones.
+Finalmente, la Implementación de un nuevo sistema de gestión de servicios
+de tecnologías de información (ISMS en inglés), tercer proyecto presentado, fue
+una evolución necesaria para apoyar la maduración de procesos clave dentro
+del marco de ITIL (2011, hoy en transición a la versión 4), principalmente, gestión
+de cambios, gestión de pedidos de servicio y de activos.
+Las actividades de dirección seleccionadas de la Unidad de Tecnología de
+Información a mi cargo, ejecutadas entre los años 2019 y 2020, complementan,
+ahora desde la perspectiva de procesos y mejora interna, el doble rol de TI:
+excelencia operativa e innovación tecnológica. El año 2020 en particular requirió
+debido en parte a aspectos presupuestales, al reducirse la capacidad de
+implementación de proyectos de la institución, y el cambio de modalidad de
+trabajo a remoto, a ejecutar ambos aspectos con igual eficacia.
+En conclusión, la función informática surge en las necesidades del negocio y
+resulta en las soluciones que las atienden. Las necesidades expresadas
+progresivamente como objetivos estratégicos, iniciativas y proyectos van al
+mismo tiempo delineando el plan estratégico de TI. Este alineamiento debe ser
+mantenido a través de un trabajo cercano con la dirección de la organización para
+responder a la velocidad que demanden los cambios internos y externos.","Desde el inicio del siglo XXI y con el desarrollo de la cuarta revolución industrial, en
+conjunto con la aplicación de la inteligencia artificial y el aprendizaje automático en los
+negocios, se ha desarrollado también una mejora de los procesos de negocio, pues ahora su
+ejecución se compone también de tareas automatizadas. Sin embargo, al intentar implementar
+estas se presentan problemas que son un común derivado en las corporaciones de todos los
+rubros: inversión de tiempo elevado y recursos para desarrollar nuevos programas que
+automaticen los procesos de negocio, necesidad de conocimiento técnico para aplicar
+soluciones de software convencionales, la no documentación de los procesos ni una correcta
+Administración de Procesos de Negocio (BPM), y, por último, la interacción de múltiples
+sistemas de información que pertenecen a una misma infraestructura de tecnologías de
+información durante la ejecución de los procesos de negocio.
+Las empresas de nuestro país, Perú, no son ajenas a dichos problemas. Por lo que
+mediante el presente proyecto se busca encontrar una solución a estos utilizando la tecnología
+de automatización robótica de procesos y una correcta administración de procesos de negocio
+en un proceso B2B, en específico, en una empresa de pinturas.
+Dentro de este proyecto se analizó la problemática descrita, el estado del arte de las
+tecnologías y metodologías que son usadas en el proyecto y también se desarrolló este último.
+Se realizó un análisis del estado actual del proceso de negocio y se propuso la nueva forma de
+ejecución. Luego se preparó la arquitectura de tecnologías de información que soportará la
+nueva ejecución. Después, se desarrolló las tareas automatizadas aplicando las metodologías
+propuestas. Por último, se preparó reportes gráficos sobre los resultados de esta ejecución y, a
+su vez, se realizó una medición de tiempos e indicadores seleccionados para evaluar el
+rendimiento del nuevo proceso de negocio.
+Con este proyecto se logró demostrar la eficiencia que se puede obtener en la ejecución
+de los procesos de negocio gracias a la automatización robótica de procesos y la solución a
+los problemas antes mencionados, incluyendo el aumento del nivel de satisfacción de los
+empleados y la interacción de los múltiples sistemas de información sin modificar la
+infraestructura tecnológica de la empresa."
+Fecha emitida,2022,2022,2022
